@@ -1,0 +1,382 @@
+﻿@{
+    string name = Context.Request.HttpContext.Session.GetString("name");
+    string id = Context.Request.HttpContext.Session.GetString("count");
+  
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DoctorPC_Web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DoctorPC_Web.styles.css" asp-append-version="true" />
+
+    <link href="~/assest/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/assest/css/flaticon.css" rel="stylesheet" type="text/css">
+    <link href="~/assest/css/fonts.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="~/assest/css/signup.css">
+    <link rel="stylesheet" href="~/assest/css/signup.css">
+
+    <link href="~/assest/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="~/assest/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="~/assest/css/slide-menu.css" rel="stylesheet" type="text/css">
+    <link href="~/assest/css/app-styles.css" rel="stylesheet" type="text/css">
+
+    <link href="~/assest/css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="~/assest/css/magnific-popup.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="~/assest/css/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen">
+    <script async src="~/assest/js/gtm.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="~/assest/js/common.js" type="text/javascript"></script>
+    <script src="~/assest/js/api.js"></script>
+
+    <link href="~/assest/images/Logonameclr.png" rel="icon">
+    <script src="~/assest/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <script src="~/assest/js/moment.js" type="text/javascript"></script>
+    <script src="~/assest/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CL7S79LJE9"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="~/assest/js/api.js"></script>
+    <!-- <a class="nav-link text-dark" asp-area="Page" asp-controller="Home" asp-action="Index">Home</a> -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6Z4WT6"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="master-head">
+        <div class="layout-fixed">
+            <div class="master-head-wrapper">
+                <div class="header-start">
+                    <div class="brand-logo">
+                        <a asp-controller="Home" asp-action="IndexX">
+                            <img src="~/assest/images/Logonameclr.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-end">
+                    <div class="d-flex justify-content-end cta-buttons">
+                        <ul class="secondary-links">
+
+
+                            <li class="user-links">
+                                <a asp-controller="Home" asp-action="LogOut">LogOut</a>
+                            </li>
+                            <li><a asp-controller="Home" asp-action="Track">Track My Order</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex justify-content-end align-items-center">
+                        <ul class="primary-nav">
+                            <li><a class="text-decoration-none"><b>Welcome @name</b></a></li>
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a asp-controller="Home" asp-action="upgrade">Upgrades</a></li>
+                            <li><a asp-controller="Home" asp-action="Guide" >First Time Buyers</a></li>
+
+
+
+
+                        </ul>
+                        <div class="cta-buttons">
+                            <a asp-controller="Home" asp-action="Help" class="btn btn-primary expert-button">Talk to expert</a>
+                            <a asp-controller="Home" asp-action="ViewMyCart" class="mini-cart">
+                                <img class="button__icon" src="~/assest/fonts/icon-light-cart.svg">
+                                <div class="cart-count text-black" id="cart-total"> @id </div>
+                            </a>
+
+
+
+                        </div>
+
+                        <div class="menu-trigger">
+                            <button type="button" class="btn nav-icon left slide-menu__control" data-target="hb-menu" data-action="open">
+                                <i class="flaticon-menu"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="slide-menu" id="hb-menu">
+        <div class="controls">
+            <button type="button" class="btn slide-menu__control" data-action="close"><i class="flaticon-cancel"></i> <span class="ms-2">Close</span> </button>
+        </div>
+
+
+        <br>
+        <ul class="primary-nav">
+
+            <li>
+                <a asp-controller="Home" asp-action="upgrade">Upgrades</a>
+            </li>
+            <li><a asp-controller ="Home" asp-action="Guide">First Time Buyers</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    
+    <footer id="footer" style="margin-top:5%; margin-bottom:0%;">
+            <div class="container layout-fixed">
+                <div class="row justify-content-between gx-5">
+                    <div class="col-md-10 order-m-2">
+                        <div class="site-nav nav-grid nav-grid-2">
+                            <div class="nav-col">
+                                <nav class="nav">
+                                    <h4 class="nav__title ac-trigger">Research</h4>
+                                    <div class="row g-2">
+                                        <div class="col-md-12">
+                                            <ul>
+                                                <li>
+
+                                                    Scientific Computing
+                                                    <ul class="sub-menu">
+                                                        <li><a href="https://analyticsindiamag.com/6-best-top-end-workstations-for-data-scientists/">Data Science</a></li>
+                                                        <li><a href="https://www.pugetsystems.com/solutions/scientific-computing-workstations/machine-learning-ai/hardware-recommendations/">Machine learning/AI</a></li>
+                                                        <li><a href="https://www.pcmag.com/picks/the-best-desktop-workstations">Scientific Computing</a></li>
+                                                    </ul>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+
+                                <nav class="nav">
+                                    <div class="reach-us">
+                                        <nav class="nav">
+                                            <h4 class="nav__title ac-trigger">Reach Us</h4>
+                                            <ul>
+                                                <li><a asp-controller="Home" asp-action="Track">Track Order</a></li>
+                                                <li><a asp-controller="Home" asp-action="Help">Talk to an Expert</a></li>
+                                                <li><h4 class="nav__title ac-trigger">Contact Us</h4></li>
+                                                <li>
+                                                    
+                                                 <img src="~/assest/fonts/mail-light.svg" class="icon">
+                                                <a href="mailto:arshuarshad8019@gmail.com> </a>
+                                                    
+                                                </li>
+
+                                                <li class="mt-3">
+                                                    <img src="~/assest/fonts/call-light.svg" class="icon">
+                                                    <div>
+                                                        <a href="tel:9496980008">+91 9496980008</a>
+                                                        <small class="d-block mt-2">Toll Free Sales & Support</small>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-2 order-m-1">
+                        <div class="site-nav">
+                            <div class="connect">
+                                <div class="logo">
+                                    <a href="#"><img class="brand-logo" src="~/assest/images/Logonameclr.png" width="180px"> </a>
+                                </div>
+
+                                <div class="social">
+                                    <h5 class="nav__title">Subscribe</h5>
+                                    <nav class="nav social-nav">
+                                        <a href="" target="_blank" class="fb"></a>
+                                        <a href="" target="_blank" class="insta"></a>
+                                        <a href="" target="_blank" class="twitter"></a>
+                                        <a href="" target="_blank" class="youtube"></a>
+                                    </nav>
+                                </div>
+                            </div>
+                            <nav class="nav">
+                                <h4 class="nav__title ac-trigger">About Us</h4>
+                                <div class="row gx-5">
+                                    <div class="col-md-auto">
+                                        <ul>
+                                            <li><a href="">Company</a></li>
+                                            <li><a href="">Reviews</a></li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-4">
+                        <div class="text-md-end">
+                            <div class="poweredby"><span>Powered by </span><a href="" target="_blank"> That's No Moon</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr />
+            <div class="container">
+                <section class="find-pc build-pc text-black">
+                    <div class="product-cta pcs-cta" style="display:block">
+                        <div class="container-fluid layout-fixed">
+                            <div class="row justify-content-between align-items-center g-5">
+                                <div class="col-6 col-md-8">
+                                    <ul class="sale-info ">
+                                        <li>
+                                            <a href="Help.html">
+                                                <span><img src="~/assest/fonts/TALK-TO-AN-EXPERT.svg"></span>
+                                                <span class="text-black">Talk to an expert</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span><img src="~/assest/fonts/Here-to-help.svg"></span>
+                                                <span>After Sale Services</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span><img src="~/assest/fonts/No-questions-warranty.svg"></span>
+                                                <span>3 years doorstep warranty</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6  col-md-4">
+                                    <div class="float-end">
+                                        <div class="d-md-flex justify-content-center justify-content-md-between">
+                                            <div class="product-price">
+                                                <div class="current-value total">
+                                                    <span class="currancy"></span>
+                                                    <span class="value-text blink" id="price" price-value>Calculating....</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="cta-buttons-container">
+                                                <div class="cta-buttons">
+                                                    <a onclick="return button_cart()" id="btnSubmit" class="btn btn-primary w-100" style="display:none">Add to cart</a>
+                                                </div>
+                                                <div class="my-2 text-center">
+                                                    <!--<button id="save_button_cart" onclick="return save_build_cart()" class="link link-iconlink-dark" style="display:none">Save</button>
+                                                    <button id="save_button_cart" class="link link-iconlink-dark" style="display:none">Save</button>-->
+                                                    <button id="button_pdf" class="link link-iconlink-dark" style="display:none">Download Your Build</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- temp -->
+    <!-- Java Script -->
+
+    <script src="~/assest/js/jquery-1.12.4.min.js"></script>
+    <!-- <script src="catalog/view/assets/js/vendor.min.js"></script> -->
+
+    <script src="~/assest/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/assest/js/gsap.min.js"></script>
+    <script src="~/assest/js/TweenMax.min.js"></script>
+    <script src="~/assest/js/ScrollTrigger.min.js"></script>
+    <script src="~/assest/js/ScrollToPlugin.min.js"></script>
+    <script src="~/assest/js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="~/assest/js/slide-menu.js"></script>
+    <script type="text/javascript" src="~/assest/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="~/assest/js/jquery.fancybox.min.js"></script>
+
+    <script src="~/assest/js/wow.min.js"></script>
+
+
+
+    <!-- Performance Slider -->
+    <link href="~/assest/css/number-pb.css" rel="stylesheet" type="text/css">
+    <script src="~/assest/js/jquery.velocity.min.js"></script>
+    <script src="~/assest/js/number-pb.js"></script>
+
+    <script type="text/javascript" src="~/assest/js/main.js"></script>
+
+
+
+
+    <script src="~/assest/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="~/assest/js/form-validation.js"></script>
+
+
+    <!-- Java Script -->
+
+    <script src="~/assest/js/jquery-1.12.4.min.js"></script>
+    <!-- <script src="catalog/view/assets/js/vendor.min.js"></script> -->
+
+    <script src="~/assest/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/assest/js/gsap.min.js"></script>
+    <script src="~/assest/js/TweenMax.min.js"></script>
+    <script src="~/assest/js/ScrollTrigger.min.js"></script>
+    <script src="~/assest/js/ScrollToPlugin.min.js"></script>
+    <script src="~/assest/js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="~/assest/js/slide-menu.js"></script>
+    <script type="text/javascript" src="~/assest/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="~/assest/js/jquery.fancybox.min.js"></script>
+
+    <script src="~/assest/js/wow.min.js"></script>
+
+
+
+    <!-- Performance Slider -->
+    <link href="~/assest/css/number-pb.css" rel="stylesheet" type="text/css">
+    <script src="~/assest/js/jquery.velocity.min.js"></script>
+    <script src="~/assest/js/number-pb.js"></script>
+
+    <script type="text/javascript" src="~/assest/js/main.js"></script>
+
+
+
+
+    <script src="~/assest/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="~/assest/js/form-validation.js"></script>
+
+    <script src="js/typed.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <script src="~/assest/js/typed.min.js"></script>
+    <script src="~/assest/js/angular.min.js"></script>
+    <script src="~/assest/js/jquery-ui.min.js"></script>
+
+    
+
+    
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+
+    
+</html>

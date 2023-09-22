@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+@model IEnumerable<DoctorPC_Web.Models.product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Manage Products</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.pname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.imgfile)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.pname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            
+            <td>
+               <img src="~/images/@Html.DisplayFor(modelItem => item.imgfile)">
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.pid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.pid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

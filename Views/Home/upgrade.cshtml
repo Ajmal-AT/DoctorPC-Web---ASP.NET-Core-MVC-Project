@@ -1,0 +1,95 @@
+﻿@{
+    Layout = "~/Views/Shared/User.cshtml";
+}
+@model IEnumerable<DoctorPC_Web.Models.product>
+
+@{
+    ViewData["Title"] = "upgrade";
+}
+
+
+<section class="products">
+    <div class="products-container">
+        <div class="product-view list-view">
+            
+            @foreach (var item in Model) {
+
+                <form asp-action="Card" enctype="multipart/form-data" role="form">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="product">
+                        <div class="product-image-wrapper">
+                            <img src="~/images/@item.imgfile" alt="@item.imgfile" title="@item.imgfile" width="200" height="250" class="rounded">
+                        </div>
+                        <div class="product-info">
+                            <input type="hidden" name="cname" value="@item.pname" class="form-control" />
+                            <span class="product-title">@item.pname</span>
+
+                            <div class="product-price">
+                                <div class="current-value">
+                                    <input type="hidden" name="price" value="@item.price" class="form-control" />
+                                    <span class="value-text" asp-for="cprice">₹ @item.price</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product-cta">
+                            <input type="submit" value="Add to Card" class="btn btn-primary" />
+                        </div>
+                    </div>
+                </form>
+            }
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<h1>upgrade</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.pname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.imgfile)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.pname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.imgfile)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.pid">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.pid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.pid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

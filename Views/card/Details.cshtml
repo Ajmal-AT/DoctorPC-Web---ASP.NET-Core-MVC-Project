@@ -1,0 +1,45 @@
+﻿@{
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+@model DoctorPC_Web.Models.cards
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>card</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cname)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cname)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cprice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cprice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.contity)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.contity)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.username)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.username)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.cid">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

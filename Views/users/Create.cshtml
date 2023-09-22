@@ -1,0 +1,229 @@
+﻿
+
+
+
+
+
+
+
+@{
+    Layout = null;
+}
+@model DoctorPC_Web.Models.user
+
+@if (TempData["Message"] != null)
+{
+    <script>
+        alert('@TempData["Message"]');
+    </script>
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Doctor-PC -Register</title>
+    <link href="~/assest/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/assest/css/flaticon.css" rel="stylesheet" type="text/css">
+    <link href="~/assest/css/fonts.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="~/assest/css/signup.css">
+    <link rel="stylesheet" href="~/assest/css/signup.css">
+
+    <link href="~/assest/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="~/assest/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="~/assest/css/slide-menu.css" rel="stylesheet" type="text/css">
+    <link href="~/assest/css/app-styles.css" rel="stylesheet" type="text/css">
+
+    <link href="~/assest/css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="~/assest/css/magnific-popup.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="~/assest/css/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen">
+    <script async src="~/assest/js/gtm.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="~/assest/js/common.js" type="text/javascript"></script>
+    <script src="~/assest/js/api.js"></script>
+
+    <link href="~/assest/images/Logonameclr.png" rel="icon">
+    <script src="~/assest/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <script src="~/assest/js/moment.js" type="text/javascript"></script>
+    <script src="~/assest/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CL7S79LJE9"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="~/assest/js/api.js"></script>
+
+</head>
+<body>
+    <section class="h-100 gradient-form" style="background-color: #dafffb;">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-10">
+                    <div class="card rounded-3 text-black">
+                        <div class="row g-0">
+                            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                    <h4 class="mb-4">Welcome Back!</h4>
+                                    <p class="small mb-0">To keep connected with us please login with your personal info</p><br><br>
+
+                                    <a asp-action="Login" class="btn btn-secondary btn-block fa-lg gradient-custom-2 mb-3 ml-2" type="button">
+                                        LOG
+                                        IN
+                                    </a>
+
+                                    <b class="text-danger">@ViewData["message"]</b>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card-body p-md-5 mx-md-4">
+
+                                    <div class="text-center">
+                                        <a href="Index.html">
+                                            <img src="~/assest/images/Logonameclr.png"
+                                                 style="width: 185px;" alt="logo">
+                                        </a>
+                                        <h4 class="mt-1 mb-5 pb-1">Create Account</h4>
+                                    </div>
+
+                                    <form asp-action="Create" enctype="multipart/form-data" role="form">
+                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                        <!-- <p>Please login to your account</p> -->
+
+                                        <div class="form-outline mb-4">
+                                            <input asp-for="name" class="form-control" placeholder="Enter Your Name" />
+                                            <span asp-validation-for="name" class="text-danger"></span>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input asp-for="email" class="form-control" type="email" placeholder="Enter Your Mail ID" />
+                                            <span asp-validation-for="email" class="text-danger"></span>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input asp-for="numb" class="form-control" type="tel" placeholder="Enter Your Number" />
+                                            <span asp-validation-for="numb" class="text-danger"></span>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input asp-for="password" class="form-control" type="password" placeholder="Enter Your Password" />
+                                            <span asp-validation-for="password" class="text-danger"></span>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input asp-for="cpassword" class="form-control" type="password" placeholder="Enter Your Confirm Password" />
+                                            <span asp-validation-for="cpassword" class="text-danger"></span>
+                                        </div>
+
+
+
+                                        <div class="form-group">
+                                            <input type="submit" value="Create" class="btn btn-primary" />
+                                        </div>
+
+                                    </form>
+
+
+                                    <div>
+                                        <a asp-action="Index">Back to List</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                <h4 class="mb-4">Welcome Back!</h4>
+                                <p class="small mb-0">To keep connected with us please login with your personal info</p><br><br>
+                                <button class="btn btn-secondary btn-block fa-lg gradient-custom-2 mb-3 ml-2" type="button">SIGN
+                                  IN</button>
+                              </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- temp -->
+    <!-- Java Script -->
+
+    <script src="~/assest/js/jquery-1.12.4.min.js"></script>
+    <!-- <script src="catalog/view/assets/js/vendor.min.js"></script> -->
+
+    <script src="~/assest/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/assest/js/gsap.min.js"></script>
+    <script src="~/assest/js/TweenMax.min.js"></script>
+    <script src="~/assest/js/ScrollTrigger.min.js"></script>
+    <script src="~/assest/js/ScrollToPlugin.min.js"></script>
+    <script src="~/assest/js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="~/assest/js/slide-menu.js"></script>
+    <script type="text/javascript" src="~/assest/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="~/assest/js/jquery.fancybox.min.js"></script>
+
+    <script src="~/assest/js/wow.min.js"></script>
+
+
+
+    <!-- Performance Slider -->
+    <link href="~/assest/css/number-pb.css" rel="stylesheet" type="text/css">
+    <script src="~/assest/js/jquery.velocity.min.js"></script>
+    <script src="~/assest/js/number-pb.js"></script>
+
+    <script type="text/javascript" src="~/assest/js/main.js"></script>
+
+
+
+
+    <script src="~/assest/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="~/assest/js/form-validation.js"></script>
+
+
+    <!-- Java Script -->
+
+    <script src="~/assest/js/jquery-1.12.4.min.js"></script>
+    <!-- <script src="catalog/view/assets/js/vendor.min.js"></script> -->
+
+    <script src="~/assest/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/assest/js/gsap.min.js"></script>
+    <script src="~/assest/js/TweenMax.min.js"></script>
+    <script src="~/assest/js/ScrollTrigger.min.js"></script>
+    <script src="~/assest/js/ScrollToPlugin.min.js"></script>
+    <script src="~/assest/js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="~/assest/js/slide-menu.js"></script>
+    <script type="text/javascript" src="~/assest/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="~/assest/js/jquery.fancybox.min.js"></script>
+
+    <script src="~/assest/js/wow.min.js"></script>
+
+
+
+    <!-- Performance Slider -->
+    <link href="~/assest/css/number-pb.css" rel="stylesheet" type="text/css">
+    <script src="~/assest/js/jquery.velocity.min.js"></script>
+    <script src="~/assest/js/number-pb.js"></script>
+
+    <script type="text/javascript" src="~/assest/js/main.js"></script>
+
+
+
+
+    <script src="~/assest/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="~/assest/js/form-validation.js"></script>
+
+    <script src="js/typed.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <script src="~/assest/js/typed.min.js"></script>
+    <script src="~/assest/js/angular.min.js"></script>
+    <script src="~/assest/js/jquery-ui.min.js"></script>
+
+</body>
+</html>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

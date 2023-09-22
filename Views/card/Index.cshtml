@@ -1,0 +1,53 @@
+﻿@{
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+@model IEnumerable<DoctorPC_Web.Models.cards>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Manage Cart</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.cname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cprice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.contity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.username)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.cname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cprice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.contity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.username)
+            </td>
+            <td>
+                
+                <a asp-action="Details" asp-route-id="@item.cid">Details</a> |
+                
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

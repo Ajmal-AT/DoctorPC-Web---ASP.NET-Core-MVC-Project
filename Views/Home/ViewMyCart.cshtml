@@ -1,0 +1,117 @@
+﻿
+@{
+    Layout = "~/Views/Shared/User.cshtml";
+}
+@model IEnumerable<DoctorPC_Web.Models.cards>
+
+@{
+    ViewData["Title"] = "ViewMyCart";
+}
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6Z4WT6"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<div id="notification"></div>
+<div class="notification"></div>
+<div class="row">
+
+
+
+    <div id="content" class="col-sm-12">
+        <!-- cart content -->
+        <section class="cart">
+            <div class="layout-fixed">
+                <div class="container-fluid">
+
+                    <hgroup class="title">
+                        <h3 class="title-text">Shopping Cart</h3>
+                    </hgroup>
+
+                    <div class="row g-4">
+                        <div class="col-md-7 col-lg-9">
+                            <form action="" method="post" enctype="multipart/form-data">
+                                <div class="cart-list">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Product</th>
+                                                <th scope="col">Price</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <thead>
+                                            @foreach (var item in Model) {
+                                            <tr>
+                                                <td>@item.cname</td>
+                                                <td>@item.cprice</td>
+                                                <td><a asp-action="Delete" asp-route-id="@item.cid"  class="text-decoration-none text-danger">Delete</a></td>
+                                            </tr>
+                                            }
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <td colspan="3">
+                                                    <h5 class="mt-4">Accessories</h5>
+                                                </td>
+                                            </tr>
+                                            <tr><td colspan="3" style="text-align:center;">No Products.</td></tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </form>
+                            <div class="my-4 text-black">
+                                <b>
+                                <small class="d-block my-2">The price and availability of items at MVP are subect to change. The shopping cart is a temporary place to store a list of your items and reflects each item's most recent price.</small>
+                                <small class="d-block my-2">Do you have a gift card or promotional code? We'll ask you to enter your claim code when it's time to pay.</small>
+                                </b>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-3">
+                            <!-- Normal -->
+                            <div class="coupon shipping-coupon">
+                                <h6 class="section-title">Shipping Coupon</h6>
+                                <p>
+                                    If you are shipping to Hyderabad, Gurgaon or Bangalore,
+                                    <a href="#" class="link link-underline link-white">reach out</a> to us for a free shipping code
+                                </p>
+
+                                <form class="coupon-entry">
+                                    <div class="form-group">
+                                        <input class="form-control" id="coupon" name="coupon" type="text" placeholder="Enter Code" required="" autocomplete="off">
+
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <button id="button-coupon" class="btn btn-primary w-100" type="button">Apply</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="cart-summary">
+                                <div class="my-4">  </div>
+                                
+                                <a href="#" class="btn btn-light btn-block w-100"> CHECKOUT </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- cart content -->
+
+
+
+
+    </div>
+
+</div>

@@ -1,0 +1,1428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<!--[if IE]><![endif]-->
+
+<!--[if IE 8 ]><html dir="ltr" lang="en" class="ie8"><![endif]-->
+
+<!--[if IE 9 ]><html dir="ltr" lang="en" class="ie9"><![endif]-->
+
+<!--[if (gt IE 9)|!(IE)]><!-->
+
+<html dir="ltr" lang="en">
+
+    <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Error 404</title>
+        
+                       
+        <!-- App css -->
+		    <!-- <link href="catalog/view/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"  />
+        <link href="catalog/view/assets/css/app-styles.css" rel="stylesheet" type="text/css" />
+        
+        <link href="catalog/view/assets/css/fonts/flaticon.css" rel="stylesheet" type="text/css" />
+        <link href="catalog/view/assets/css/fonts/fonts.css" rel="stylesheet" type="text/css" />
+
+        
+        <link href="catalog/view/assets/vendors/side-menu/slide-menu.css" rel="stylesheet">
+        <link href="catalog/view/assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <link href="catalog/view/assets/vendors/fancybox/jquery.fancybox.min.css" rel="stylesheet"> -->
+        
+        
+        <!-- App css -->
+         
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../css/flaticon.css" rel="stylesheet" type="text/css">
+        <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+
+        
+        <link href="../css/swiper-bundle.min.css" rel="stylesheet">
+        <link href="../css/jquery.fancybox.min.css" rel="stylesheet">
+        <link href="../css/slide-menu.css" rel="stylesheet" type="text/css">
+        <link href="../css/app-styles.css" rel="stylesheet" type="text/css">
+        
+        <link href="../css/animate.min.css" rel="stylesheet" type="text/css">
+
+                 <script src="../js/jquery.min.js"></script>
+        <script src="../js/common.js" type="text/javascript"></script>
+
+        
+            <link href="../images/mvp-favicon.png" rel="icon">
+
+        
+        
+        
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CL7S79LJE9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CL7S79LJE9');
+</script>
+        
+        <!--<script>
+            $(document).ready(function() {
+                $(window).scroll(function() {
+                if($(document).scrollTop() > 10) {
+                    $('#mainNav').addClass('shrink');
+                }
+                else {
+                $('#mainNav').removeClass('shrink');
+                }
+              });
+            });
+
+            // Hide Header on on scroll down
+            var didScroll;
+            var lastScrollTop = 0;
+            var delta = 5;
+            var navbarHeight = $('#mainNav').outerHeight();
+
+            $(window).scroll(function(event){
+                didScroll = true;
+            });
+
+            setInterval(function() {
+                if (didScroll) {
+                    hasScrolled();
+                    didScroll = false;
+                }
+            }, 250);
+
+            function hasScrolled() {
+                var st = $(this).scrollTop();
+                
+                // Make sure they scroll more than delta
+                if(Math.abs(lastScrollTop - st) <= delta)
+                    return;
+                
+                // If they scrolled down and are past the navbar, add class .nav-up.
+                // This is necessary so you never see what is "behind" the navbar.
+                if (st > lastScrollTop && st > navbarHeight){
+                    // Scroll Down
+                    $('#mainNav').removeClass('nav-down').addClass('nav-up');
+                } else {
+                    // Scroll Up
+                    if(st + $(window).height() < $(document).height()) {
+                        $('#mainNav').removeClass('nav-up').addClass('nav-down');
+                    }
+                }
+                
+                lastScrollTop = st;
+            }
+        </script>-->
+        <!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WWP4BLP');</script> -->
+        
+        
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K6Z4WT6');</script>
+        <!-- End Google Tag Manager -->
+        
+        <script src="../js/api.js"></script>
+    
+    
+
+    </head>
+    <style>
+        .n-items {
+            font-size: 10px;
+            color: #000;
+            background: #feda2a;
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            position: absolute;
+            
+            line-height: 1.3;
+            text-align: center;
+            overflow: hidden;
+            font-weight: 800;
+        }
+        
+    </style>
+    <style type="text/css">
+    /*for html spanner*/
+
+        .lds-roller {
+          display: inline-block;
+          position: relative;
+          width: 80px;
+          height: 80px;
+        }
+        .lds-roller div {
+          animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          transform-origin: 40px 40px;
+        }
+        .lds-roller div:after {
+          content: " ";
+          display: block;
+          position: absolute;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background: #fff;
+          margin: -4px 0 0 -4px;
+        }
+        .lds-roller div:nth-child(1) {
+          animation-delay: -0.036s;
+        }
+        .lds-roller div:nth-child(1):after {
+          top: 63px;
+          left: 63px;
+        }
+        .lds-roller div:nth-child(2) {
+          animation-delay: -0.072s;
+        }
+        .lds-roller div:nth-child(2):after {
+          top: 68px;
+          left: 56px;
+        }
+        .lds-roller div:nth-child(3) {
+          animation-delay: -0.108s;
+        }
+        .lds-roller div:nth-child(3):after {
+          top: 71px;
+          left: 48px;
+        }
+        .lds-roller div:nth-child(4) {
+          animation-delay: -0.144s;
+        }
+        .lds-roller div:nth-child(4):after {
+          top: 72px;
+          left: 40px;
+        }
+        .lds-roller div:nth-child(5) {
+          animation-delay: -0.18s;
+        }
+        .lds-roller div:nth-child(5):after {
+          top: 71px;
+          left: 32px;
+        }
+        .lds-roller div:nth-child(6) {
+          animation-delay: -0.216s;
+        }
+        .lds-roller div:nth-child(6):after {
+          top: 68px;
+          left: 24px;
+        }
+        .lds-roller div:nth-child(7) {
+          animation-delay: -0.252s;
+        }
+        .lds-roller div:nth-child(7):after {
+          top: 63px;
+          left: 17px;
+        }
+        .lds-roller div:nth-child(8) {
+          animation-delay: -0.288s;
+        }
+        .lds-roller div:nth-child(8):after {
+          top: 56px;
+          left: 12px;
+        }
+        @keyframes lds-roller {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        #spinner_container {
+          background-color: rgba(0,0,0,0.5);
+          position: fixed;
+          top: 0;
+          width: 100%;
+          height: 100vh;
+          z-index: 9999;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          display: none;
+        }
+    </style>
+
+<body class="wrapper">
+    
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6Z4WT6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!--<div class="c-preloader">
+        <div class="c-preloader__count"></div>
+        <div class="c-preloader__progress"></div>
+        
+    </div>-->
+    
+        
+   
+        <header class="master-head">
+            <div class="layout-fixed">
+                <div class="master-head-wrapper">
+                    <div class="header-start">
+                        <div class="brand-logo">
+                            <a href="https://themvp.in/">
+                                <img src="themvp-logo.svg" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-end">
+                    <div class="d-flex justify-content-end cta-buttons">
+                        <ul class="secondary-links">
+                            
+                                                    
+                            <li class="user-links">
+                                <a href="https://themvp.in/login">Sign In</a>
+                                
+                            </li>
+                                                        <li><a href="contact-us">Get Support</a></li>
+                            <li><a href="https://themvp.in/order-track">Track Order</a></li>
+                            <li><a href="tel:18003092944"> 1800 309 2944</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="d-flex justify-content-end align-items-center">
+                        <ul class="primary-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-auto-close="outside">Find a solution</a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                  
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Content Creation
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">
+                                        <ul class="sub-menu sub-menu-parent">
+                                                 <li><a class="dropdown-item" href="workstations-for-creators">Overview</a></li>
+                                                <li>
+                                                    <div class="btn-group dropend">
+                                                        <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                          Photo Editing
+                                                        </button>
+                                                        <ul class="dropdown-menu sub-menu sub-menu-child">
+                                                          <li><a class="dropdown-item" href="https://themvp.in/photo-editing-pc/adobe-lightroom">Adobe Lightroom</a></li>
+                                                          <li><a class="dropdown-item" href="https://themvp.in/photo-editing-pc/adobe-photoshop">Adobe Photoshop</a></li>
+                                                        </ul>
+                                                      </div>
+                                                </li>
+                                                
+                                                <li>
+                                                      
+                                                      <div class="btn-group dropend">
+                                                        <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                          Video Editing
+                                                        </button>
+                                                        <ul class="dropdown-menu sub-menu sub-menu-child">
+                                                          <li><a class="dropdown-item" href="https://themvp.in/video-editing-pc/adobe-after-effects">Adobe After Effects</a></li>
+                                                          <li><a class="dropdown-item" href="https://themvp.in/video-editing-pc/adobe-premier-pro">Adobe Premier Pro</a></li>
+                                                          <li><a class="dropdown-item" href="https://themvp.in/video-editing-pc/davinci-resolve">Davinci Resolve</a></li>
+                                                          <li><a class="dropdown-item" href="https://themvp.in/video-editing-pc/foundry-nuke">Foundry Nuke</a></li>
+                                                        </ul>
+                                                      </div>
+                                                </li>
+                                                
+                                                <li>
+                                                      <div class="btn-group dropend">
+                                                        <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                          3D Design and Animation
+                                                        </button>
+                                                        <ul class="dropdown-menu sub-menu sub-menu-child">
+                                                          <li><a class="dropdown-item" href="https://themvp.in/3d-design-animation-pc/autodesk-3ds-max">Autodesk 3ds Max</a></li>
+                                                          <li><a class="dropdown-item" href="https://themvp.in/3d-design-animation-pc/houdini">Houdini</a></li>
+                                                          <li><a class="dropdown-item" href="https://themvp.in/3d-design-animation-pc/autodesk-maya">Autodesk Maya</a></li>
+                                                          <li><a class="dropdown-item" href="https://themvp.in/3d-design-animation-pc/Blender">Blender</a></li>
+                                                          <li><a class="dropdown-item" href="https://themvp.in/3d-design-animation-pc/Zbrush">ZBrush</a></li>
+                                                          <li><a class="dropdown-item" href="https://themvp.in/3d-design-animation-pc/Cinema-4D">Cinema 4d</a></li>
+                                                        </ul>
+                                                      </div>
+                                                </li>
+                                            
+                                                <li>
+                                                  <div class="btn-group dropend">
+                                                    <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                      Real-Time Engines
+                                                    </button>
+                                                    <ul class="dropdown-menu sub-menu sub-menu-child">
+                                                      <li><a class="dropdown-item" href="https://themvp.in/real-time-engine-pc/game-development">Game Development</a></li>
+                                                      <li><a class="dropdown-item" href="https://themvp.in/real-time-engine-pc/unity">Unity</a></li>
+                                                      <li><a class="dropdown-item" href="https://themvp.in/real-time-engine-pc/unreal-engine">Unreal Engine</a></li>
+                                                      <li><a class="dropdown-item" href="https://themvp.in/real-time-engine-pc/virtual-production">Virtual Production</a></li>
+                                                    </ul>
+                                                  </div>
+                                                </li>
+                                                <li>
+                                                  <div class="btn-group dropend">
+                                                    <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                      Rendering 
+                                                    </button>
+                                                    <ul class="dropdown-menu sub-menu sub-menu-child">
+                                                      <li><a class="dropdown-item" href="https://themvp.in/rendering-workstations/octane-render">Octane Render</a></li>
+                                                      <li><a class="dropdown-item" href="https://themvp.in/rendering-workstations/Redshift">Redshift</a></li>
+                                                      <li><a class="dropdown-item" href="https://themvp.in/rendering-workstations/Vray">V-Ray</a></li>
+                                                    </ul>
+                                                  </div>
+                                                </li>
+                                                
+                                            
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Engineering
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">
+                                        <ul class="sub-menu sub-menu-parent">
+                                                <li><a class="dropdown-item" href="workstations-for-CAD">Overview</a></li>  
+                                                
+                                                <li>
+                                                      <div class="btn-group dropend">
+                                                        <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                          CAD
+                                                        </button>
+                                                        <ul class="dropdown-menu sub-menu sub-menu-child">
+                                                            <li><a class="dropdown-item" href="https://themvp.in/cad-workstations/autodesk-autocad">Autodesk AutoCAD</a></li>
+                                                            <li><a class="dropdown-item" href="https://themvp.in/cad-workstations/autodesk-inventor">Autodesk Inventor</a></li>
+                                                            <li><a class="dropdown-item" href="https://themvp.in/cad-workstations/autodesk-revit">Autodesk Revit</a></li>
+                                                            <li><a class="dropdown-item" href="https://themvp.in/cad-workstations/solidworks">Solidworks</a></li>
+                                                        </ul>
+                                                      </div>
+                                                </li>
+                                            
+                                                <li>
+                                                  <div class="btn-group dropend">
+                                                    <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                      Photogrammetry
+                                                    </button>
+                                                    <ul class="dropdown-menu sub-menu sub-menu-child">
+                                                      <li><a class="dropdown-item" href="https://themvp.in/photogrammetry-workstations/agisoft-metashape">Agisoft Metashape</a></li>
+                                                      <li><a class="dropdown-item" href="https://themvp.in/photogrammetry-workstations/pix-4D">Pix4d</a></li>
+                                                      <li><a class="dropdown-item" href="https://themvp.in/photogrammetry-workstations/reality-capture">RealityCapture</a></li>
+                                                    </ul>
+                                                  </div>
+                                                </li>
+                                                
+                                                
+                                            
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                                    
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Research
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">
+                                            <ul class="sub-menu sub-menu-parent">
+                                                  
+                                                <li><a class="dropdown-item" href="research-workstation">Overview</a></li>
+                                                
+                                                  <li>
+                                                      
+                                                      <div class="btn-group dropend">
+                                                        <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                          Scientific Computing
+                                                        </button>
+                                                        <ul class="dropdown-menu sub-menu sub-menu-child">
+                                                          <li><a class="dropdown-item" href="https://themvp.in/scientific-computing-workstations/data-science">Data Science</a></li>
+                                                          <li><a class="dropdown-item" href="https://themvp.in/scientific-computing-workstations/ML-AI">Machine learning/AI</a></li>
+                                                          <li><a class="dropdown-item" href="https://themvp.in/scientific-computing-workstations/scientific-computing">Scientific Computing</a></li>
+                                                        </ul>
+                                                      </div>
+                                                </li>
+                                                
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingSix">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                          Gaming
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="sub-menu sub-menu-parent">
+                                                <li><a class="dropdown-item" href="gaming-pc-build">Overview</a></li>
+                                              <li><a class="dropdown-item" href="https://themvp.in/live-streaming-pc">Live Streaming</a></li>
+                                              <li><a class="dropdown-item" href="https://themvp.in/gaming-pc">Gaming PC</a></li>
+                                            </ul>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                        Other Workstations
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">
+                                          <ul class="sub-menu sub-menu-parent">
+                                            <li><a class="dropdown-item" href="other-workstations">Overview</a></li>  
+                                            <li><a class="dropdown-item" href="more-workstations/trading-pc">Stock Trading</a></li>
+                                            <li><a class="dropdown-item" href="more-workstations/compact-pc">Compact PC & HTPC</a></li>
+                                            <li><a class="dropdown-item" href="more-workstations/vmware-workstation">VMWare Workstation</a></li>
+                                          </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                                    
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                          Custom Servers
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="sub-menu sub-menu-parent">
+                                              <li><a class="dropdown-item" href="upgrades/NAS-storage">NAS Storage</a></li>
+                                              <li><a class="dropdown-item" href="upgrades/GPU-cluster">GPU Cluster</a></li>
+                                            </ul>
+                                          </div>
+                                      </div>
+                                    </div>
+                                     
+                                    
+                                    
+                                </div>
+                                <ul class="no-dropdown">
+                                    <li><a class="dropdown-item" href="water-cooled-pc">Liquid Cooled PC</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" id="dropdownMenuButton2" data-bs-toggle="dropdown" data-bs-auto-close="outside">Build Pc</a>
+                            <ul class="dropdown-menu sub-menu sub-menu-parent" aria-labelledby="dropdownMenuButton2">
+                              <li><a class="dropdown-item" href="custom-pc-builder">Custom PC</a></li>
+                              <li><a class="dropdown-item" href="custom-gaming-pc">Custom Gaming PC</a></li>
+                                <li>
+                                <div class="btn-group dropend">
+                                                        <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                          NVIDIA
+                                                        </button>
+                                                        <ul class="dropdown-menu sub-menu sub-menu-child">
+                                                          <li><a class="dropdown-item" href="https://www.themvp.in/pages/geforce-ada/">GeForce ADA</a></li>
+                                                          <li><a class="dropdown-item" href="https://www.themvp.in/pages/geforce-esports/">GeForce Esports</a></li>
+                                                          <li><a class="dropdown-item" href="https://www.themvp.in/pages/geforce-creators/">GeForce Creators</a></li>
+                                                            <li><a class="dropdown-item" href="https://www.themvp.in/pages/geforce-ada-system/">GeForce ADA Systems</a></li>
+                                                        </ul>
+                                                      </div>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="https://themvp.in/upgrades">Upgrades</a></li>
+                        <li><a href="enterprise-solutions">Enterprises</a></li>
+                        <li><a href="https://themvp.in/first-time-buyers">First Time Buyers</a></li>
+                        
+                        
+                            
+                                                
+                    </ul>
+                        <div class="cta-buttons">
+                            <a href="https://themvp.in/talk-to-expert" class="btn btn-primary expert-button">Talk to expert</a>
+                            <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#GlobalSearchModal"><img class="button__icon" src="catalog/view/assets/img/icon-light-search.svg"> </a> -->
+                            
+                            <!--<a href="https://themvp.in/cart"><img class="button__icon" src="catalog/view/assets/img/icon-light-cart.svg"> <a  href="https://themvp.in/cart" class="mini-cart">
+    <img class="button__icon" src="catalog/view/assets/img/icon-light-cart.svg">
+    <div class="cart-count" id="cart-total">0</div>
+</a>
+
+</a>-->
+                            <a href="https://themvp.in/cart" class="mini-cart">
+    <img class="button__icon" src="icon-light-cart.svg">
+    <div class="cart-count" id="cart-total">0</div>
+</a>
+
+                            
+                            
+                        </div>
+                        
+                        <div class="menu-trigger">
+                        <button type="button" class="btn nav-icon left slide-menu__control" data-target="hb-menu" data-action="open">
+                            <i class="flaticon-menu"></i>
+                        </button>
+                    </div>
+                    </div>
+                
+                
+                </div>
+                </div>
+            </div>
+        </header>
+        <nav class="slide-menu" id="hb-menu">
+            <div class="controls">
+                <button type="button" class="btn slide-menu__control" data-action="close"><i class="flaticon-cancel"></i> <span class="ms-2">Close</span> </button>
+            </div>
+            
+                
+                            <br>
+                        <ul class="primary-nav">
+                
+            <!-- <li>
+                <a href="#">Your Account</a>
+                <ul>
+                    <li><a href="https://themvp.in/order-history">Manage Orders</a></li>
+                    <li><a href="https://themvp.in/edit-account">Edit Profile</a></li>
+                    <li><a href="#">Saved Builds</a></li>
+                </ul>
+            </li> -->
+            
+            <li>
+              <a href="#">Find a solution</a>
+              <ul>
+                  <li>
+                    <a href="#">Content Creation</a>
+                      <ul>
+                          <li><a href="workstations-for-creators">Overview</a></li>
+                          <li>
+                            <a href="https://themvp.in/photo-editing-pc">Photo Editing</a>
+                              <ul>
+                                  <li><a href="https://themvp.in/photo-editing-pc/adobe-lightroom">Adobe Lightroom </a></li>
+                                  <li><a href="https://themvp.in/photo-editing-pc/adobe-photoshop">Adobe Photoshop</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                            <a href="#">Video Editing</a>
+                              <ul>
+                                  <li><a href="https://themvp.in/video-editing-pc/adobe-after-effects">Adobe After Effects</a></li>
+                                  <li><a href="https://themvp.in/video-editing-pc/adobe-premier-pro">Adobe Premier Pro</a></li>
+                                  <li><a href="https://themvp.in/video-editing-pc/davinci-resolve">Davinci Resolve</a></li>
+                                  <li><a href="https://themvp.in/video-editing-pc/foundry-nuke">Foundry Nuke</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                            <a href="#">3D Design and Animation </a>
+                              <ul>
+                                  <li><a href="https://themvp.in/3d-design-animation-pc/autodesk-3ds-max">Autodesk 3ds Max</a></li>
+                                  <li><a href="3d-design-animation-pc/houdini">Houdini</a></li>
+                                  <li><a href="https://themvp.in/3d-design-animation-pc/autodesk-maya">Autodesk Maya</a></li>
+                                  <li><a href="https://themvp.in/3d-design-animation-pc/Blender">Blender</a></li>
+                                  <li><a href="https://themvp.in/3d-design-animation-pc/Zbrush">ZBrush</a></li>
+                                  <li><a href="https://themvp.in/3d-design-animation-pc/Cinema-4D">Cinema 4d</a></li>
+                                  
+                              </ul>
+                          </li>
+                          
+                          <li>
+                            <a href="#">Real-Time Engines</a>
+                              <ul>
+                                  <li><a href="https://themvp.in/real-time-engine-pc/game-development">Game Development</a></li>
+                                  <li><a href="https://themvp.in/real-time-engine-pc/unity">Unity</a></li>
+                                  <li><a href="https://themvp.in/real-time-engine-pc/unreal-engine">Unreal Engine</a></li>
+                                  <li><a href="https://themvp.in/real-time-engine-pc/virtual-production">Virtual Production</a></li>
+                              </ul>
+                          </li>
+                          
+                          <li>
+                            <a href="#">Rendering</a>
+                              <ul>
+                                  <li><a href="https://themvp.in/rendering-workstations/octane-render">Octane Render</a></li>
+                                  <li><a href="https://themvp.in/rendering-workstations/Redshift">Redshift</a></li>
+                                  <li><a href="https://themvp.in/rendering-workstations/Vray">V-Ray</a></li>
+                              </ul>
+                          </li>
+                          
+                          
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="#">Research</a>
+                      <ul>
+                          <li><a href="research-workstation">Overview</a></li>
+                          <!--<li>
+                            <a href="#">Rendering</a>
+                              <ul>
+                                  <li><a href="https://themvp.in/photogrammetry-workstations/agisoft-metashape">Agisoft Metashape</a></li>
+                                  <li><a href="https://themvp.in/photogrammetry-workstations/pix-4D">Pix4d</a></li>
+                              </ul>
+                          </li> -->
+                          <li>
+                            <a href="#">Scientific Computing</a>
+                              <ul>
+                                  <li><a href="https://themvp.in/scientific-computing-workstations/data-science">Data Science</a></li>
+                                  <li><a href="https://themvp.in/scientific-computing-workstations/ML-AI">Machine learning/AI</a></li>
+                                  <li><a href="https://themvp.in/scientific-computing-workstations/scientific-computing">Scientific Computing</a></li>
+                              </ul>
+                          </li>
+                          
+                         
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Gaming</a>
+                      <ul>
+                          <li><a href="gaming-pc-build">Overview</a></li>
+                          <li><a href="https://themvp.in/live-streaming-pc">Live Streaming</a></li>
+                          <li><a href="https://themvp.in/gaming-pc">Gaming PC</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="#">Other Workstations</a>
+                      <ul>
+                          <li><a href="other-workstations">Overview</a></li>
+                          <li><a href="more-workstations/trading-pc/">Stock Trading</a></li>
+                          <li><a href="more-workstations/compact-pc">Compact PC & HTPC</a></li>
+                          <li><a href="more-workstations/vmware-workstation">VMWare Workstation</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="#">Custom Servers</a>
+                      <ul>
+                          <li><a href="upgrades/NAS-storage">NAS Storage</a></li>
+                          <li><a href="upgrades/GPU-cluster">GPU Cluster</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="water-cooled-pc">Liquid Cooled PC</a>
+                  </li>
+              </ul>
+            </li>
+            <li>
+                <a href="#">Build a PC</a>
+                <ul>
+                    <li><a href="custom-pc-builder">Custom PC</a></li>
+                    <li><a href="custom-gaming-pc">Custom Gaming PC</a></li>
+                    <li>
+                        <a href="https://themvp.in/photo-editing-pc">NVIDIA</a>
+                              <ul>
+                                  <li><a href="https://www.themvp.in/pages/geforce-ada/">GeForce ADA</a></li>
+                                  <li><a href="https://www.themvp.in/pages/geforce-esports/">GeForce Esports</a></li>
+                                  <li><a href="https://www.themvp.in/pages/geforce-creators/">GeForce Creators</a></li>
+                                  <li><a href="https://www.themvp.in/pages/geforce-ada-system/">GeForce ADA Systems</a></li>
+                              </ul>
+                          </li>
+                    <!--<li><a href="https://themvp.in/custom-liquid-cooling">Build liquid PC</a></li>-->
+                </ul>
+            </li>
+            <li><a href="upgrades">Upgrades</a>
+                
+            </li>
+            <li><a href="enterprise-solutions">Enterprises</a></li>
+            <li><a href="first-time-buyers">First Time Buyers</a></li>
+        </ul>
+        </nav><link rel="stylesheet" type="text/css" href="../css/robot_page.css">
+<link rel="stylesheet" type="text/css" href="../css/robot_styles.css">
+<script src="../js/TweenMax.min_1.js"></script>
+<script type="text/javascript" src="../js/brokebot.js"></script>
+<script src="../js/snap.svg-min.js" type="text/javascript"></script>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:700,300" rel="stylesheet" type="text/css">
+
+<script>
+	var isHeadless = true;
+</script>
+
+<!--<div class="secondary-nav-wrapper">
+    <div class="layout-fixed">
+        <div class="content-align">
+            <nav class="breadcrumb-nav" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="https://themvp.in/index.php?route=common/home">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="https://themvp.in/index.php?route=error/not_found">Error 404</a></li>
+                                    </ol>
+            </nav>
+        </div>
+    </div>
+</div>-->
+
+<main class="error-pages">
+    <div class="error-img">
+        <img src="../images/error-404.png">
+    </div>
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="text-center text-dark">
+                    <p>I think you turned the wrong way. Let’s go back.</p>
+                    <a href="https://themvp.in/index.php?route=common/home" class="btn btn-primary btn-sm">back to home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<section class="blog media">
+  <div class="container layout-fixed">
+    <div class="row">
+      <div class="col">
+        <div class="blog-teaser media-teaser">
+          <div class="teaser-card">
+            <div class="mb-4"><h1 class="title title__small">Our Blog</h1></div>
+            <a href="https://blog.themvp.in" target="_blank"><img src="../images/blog-entry-card.jpg"> </a>
+          </div>
+          <div class="teaser-card">
+            <div class="mb-4"><h1 class="title title__small">Instagram</h1></div>
+            <div>
+              <script src="../js/platform.js" defer></script>
+              <div class="elfsight-app-3e0504a8-cefa-40b8-a8df-12372d5b80a9"></div>
+            </div>
+          </div>
+          <div class="teaser-card">
+            <div class="mb-4"><h1 class="title title__small">Youtube</h1></div>
+            <div>
+              <script src="../js/platform.js" defer></script>
+              <div class="elfsight-app-12a4f7ca-64df-4614-b280-4ef70262e6d6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+    <div class="container layout-fixed">
+        <div class="row justify-content-between gx-5">
+            <div class="col-md-10 order-m-2">
+                <div class="site-nav nav-grid nav-grid-2">
+                    <div class="nav-col">
+                        <nav class="nav">
+                            <h4 class="nav__title ac-trigger">Build a PC</h4>
+                            <ul>
+                                <li><a href="custom-pc-builder">Build a custom PC</a></li>
+                                <li><a href="https://themvp.in/custom-gaming-pc">Build custom gaming PC</a></li>
+                                <li><a href="water-cooled-pc">Build liquid PC</a></li>
+                                <li><a href="https://themvp.in/first-time-buyers">First time buyers</a></li>
+                                <li><a href="enterprise-solutions">Enterprises</a></li>
+                            </ul>
+                        </nav>
+                        
+                        <nav class="nav">
+                            <h4 class="nav__title ac-trigger">Gaming</h4>
+                             <div class="row">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li><a href="gaming-pc-build">Overview</a></li>
+                                            <li>
+                                                <a href="https://themvp.in/live-streaming-pc">Livestreaming</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://themvp.in/gaming-pc">Gaming Systems</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                             </div>
+                        </nav>
+                        
+                        
+                        <nav class="nav">
+                            <h4 class="nav__title ac-trigger">NVidia</h4>
+                            <ul>
+                                <li><a href="https://www.themvp.in/pages/geforce-ada/">GeForce ADA</a></li>
+                                <li><a href="https://www.themvp.in/pages/geforce-esports/">GeForce Esports</a></li>
+                                <li><a href="https://www.themvp.in/pages/geforce-creators/">GeForce Creators</a></li>
+                                <li><a href="https://www.themvp.in/pages/geforce-ada-system/">GeForce ADA Systems</a></li>
+                            </ul>
+                        </nav>
+                        
+                        
+                        <nav class="nav">
+                            <h4 class="nav__title ac-trigger">Other Workstations</h4>
+                            <ul>
+                                <li><a href="https://themvp.in/upgrades">Upgrades</a></li>
+                                <li><a href="https://themvp.in/more-workstations/trading-pc">Stock Trading</a></li>
+                                <li><a href="https://themvp.in/more-workstations/compact-pc">Compact PC & HTPC</a></li>
+                                <li><a href="https://themvp.in/more-workstations/vmware-workstation">VMWare Workstation</a></li>
+                            </ul>
+                        </nav>
+                        
+                    </div>
+                    
+                    <div class="nav-col">
+                        <nav class="nav">
+                            <h4 class="nav__title ac-trigger">Content Creation</h4>
+                            
+                            <div class="row g-2">
+                                <div class="col-md-12">
+                                    <ul>
+                                        <li><a href="workstations-for-creators">Overview</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12">
+                                    <ul>
+                                        <li>
+                                            Photo Editing
+                                            <ul class="sub-menu sub-menu-inline">
+                                                <li><a href="https://themvp.in/photo-editing-pc/adobe-lightroom">Adobe Lightroom</a></li>
+                                                <li><a href="https://themvp.in/photo-editing-pc/adobe-photoshop">Adobe Photoshop</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-md-12">
+                                    <ul>
+                                        <li>
+                                            Video Editing
+                                            <ul class="sub-menu sub-menu-inline">
+                                                <li><a href="https://themvp.in/video-editing-pc/adobe-after-effects">Adobe After Effects</a></li>
+                                                <li><a href="https://themvp.in/video-editing-pc/adobe-premier-pro">Adobe Premier Pro</a></li>
+                                                <li><a href="https://themvp.in/video-editing-pc/davinci-resolve">Davinci Resolve</a></li>
+                                                <li><a href="https://themvp.in/video-editing-pc/foundry-nuke">Foundry Nuke</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            
+                                
+                                <div class="col-md-12">
+                                    <ul>
+                                        <li>
+                                            3D Design and Animation
+                                            <ul class="sub-menu sub-menu-inline">
+                                                <li><a href="https://themvp.in/3d-design-animation-pc/autodesk-3ds-max">Autodesk 3ds Max</a></li>
+                                                <li><a href="https://themvp.in/3d-design-animation-pc/houdini">Houdini</a></li>
+                                                <li><a href="https://themvp.in/3d-design-animation-pc/autodesk-maya">Autodesk Maya</a></li>
+                                                <li><a href="https://themvp.in/3d-design-animation-pc/Blender">Blender</a></li>
+                                                <li><a href="https://themvp.in/3d-design-animation-pc/Zbrush">ZBrush</a></li>
+                                                <li><a href="https://themvp.in/3d-design-animation-pc/Cinema-4D">Cinema 4D</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-md-12">
+                                    <ul>
+                                        <li>
+                                            Real Time Engine
+                                            <ul class="sub-menu sub-menu-inline">
+                                                <li><a href="https://themvp.in/real-time-engine-pc/game-development">Game Development</a></li>
+                                                <li><a href="https://themvp.in/real-time-engine-pc/unity">Unity</a></li>
+                                                <li><a href="https://themvp.in/real-time-engine-pc/unreal-engine">Unreal Engine</a></li>
+                                                <li><a href="https://themvp.in/real-time-engine-pc/virtual-production">Virtual Production</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-md-12">
+                                    <ul>
+                                        <li>
+                                            Rendering
+                                            <ul class="sub-menu sub-menu-inline">
+                                                <li><a href="https://themvp.in/rendering-workstations/octane-render">Octane Render</a></li>
+                                                <li><a href="https://themvp.in/rendering-workstations/Redshift">Redshift</a></li>
+                                                <li><a href="https://themvp.in/rendering-workstations/Vray">V-Ray</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                
+                            </div>
+                        </nav>
+                        
+                        <nav class="nav">
+                            <h4 class="nav__title ac-trigger">Engineering</h4>
+                            
+                            <div class="row g-2">
+                                
+                                <div class="col-md-12">
+                                    <ul>
+                                        <li><a href="workstations-for-CAD">Overview</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-md-12">
+                                    <ul>
+                                        <li>
+                                            
+                                            CAD
+                                            <ul class="sub-menu sub-menu-inline">
+                                                <li><a href="https://themvp.in/cad-workstations/autodesk-autocad">Autodesk AutoCAD</a></li>
+                                                <li><a href="https://themvp.in/cad-workstations/autodesk-inventor">Autodesk Inventor</a></li>
+                                                <li><a href="https://themvp.in/cad-workstations/autodesk-revit">Autodesk Revit</a></li>
+                                                <li><a href="https://themvp.in/cad-workstations/solidworks">Solidworks</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-md-12">
+                                    <ul>
+                                        <li>
+                                            Photogrammetry
+                                            <ul class="sub-menu sub-menu-inline">
+                                                <li><a href="https://themvp.in/photogrammetry-workstations/agisoft-metashape">Agisoft Metashape</a></li>
+                                                <li><a href="https://themvp.in/photogrammetry-workstations/pix-4D">Pix4d</a></li>
+                                                <li><a href="https://themvp.in/photogrammetry-workstations/reality-capture">RealityCapture</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </nav>
+                        
+                        
+                        
+                    </div>
+                    
+                    <div class="nav-col">
+                        <nav class="nav">
+                            <h4 class="nav__title ac-trigger">Research</h4>
+                            <div class="row g-2">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li><a href="research-workstation">Overview</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li>
+                                                
+                                                Scientific Computing
+                                                <ul class="sub-menu">
+                                                    <li><a href="https://themvp.in/scientific-computing-workstations/data-science">Data Science</a></li>
+                                                    <li><a href="https://themvp.in/scientific-computing-workstations/ML-AI">Machine learning/AI</a></li>
+                                                    <li><a href="https://themvp.in/scientific-computing-workstations/scientific-computing">Scientific Computing</a></li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                             </div>
+                        </nav>
+                        
+                        <nav class="nav">
+                            <h4 class="nav__title ac-trigger">Custom Servers</h4>
+                            <ul>
+                                <li><a href="upgrades/NAS-storage">NAS Storage</a></li>
+                                <li><a href="upgrades/GPU-cluster">GPU Cluster</a></li>
+                            </ul>
+                        </nav>
+                        
+                        <nav class="nav">
+                            <h4 class="nav__title ac-trigger">About Us</h4>
+                            <div class="row gx-5">
+                                <div class="col-md-auto">
+                                    <ul>
+                                    <li><a href="https://themvp.in/about-us">Company</a></li>
+                                    <li><a href="scoring-method">Scoring</a></li>
+<!--                                    <li><a href="https://themvp.in/blog">Blog</a></li>-->
+                                    <li><a href="https://blog.themvp.in/">Blog</a></li>
+                                    <li><a href="https://themvp.in/customer-reviews">Reviews</a></li>
+                                    
+                                    </ul>
+                                </div>
+                                <div class="col-md-auto">
+                                    <ul>
+                                        <li><a href="/quality-process">Quality Process</a></li>
+                                        <li><a href="/careers-at-themvp">Careers</a></li>
+                                        <li><a href="https://themvp.in/terms">Terms</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </nav>
+                        
+                    </div>
+                    
+                    
+                    </div>
+            </div>
+            <div class="col-md-2 order-m-1">
+                <div class="site-nav">
+                <div class="connect">
+                        <div class="logo">
+                            <a href="#"><img class="brand-logo" src="themvp-logo_1.svg"> </a>
+                        </div>
+                        
+                        <div class="social">
+                            <h5 class="nav__title">Subscribe</h5>
+                            <nav class="nav social-nav">
+                                <a href="https://www.facebook.com/themvp.in" target="_blank" class="fb"></a>
+                                <a href="https://www.instagram.com/themvp.in/" target="_blank" class="insta"></a>
+                                <a href="https://twitter.com/themvp_in" target="_blank" class="twitter"></a>
+                                <a href="https://www.youtube.com/c/mvpinsight" target="_blank" class="youtube"></a>
+                            </nav>
+                        </div>
+                </div>
+                <div class="reach-us">
+                    <nav class="nav">
+                        <h4 class="nav__title ac-trigger">Reach Us</h4>
+                        <ul>
+                            <li><a href="https://themvp.in/order-track">Track Order</a></li>
+                            <li><a href="https://themvp.in/talk-to-expert">Talk to an Expert</a></li>
+                            <li><a href="/contact-us">Locations & Contacts</a></li>
+                            <li><img src="mail-light.svg" class="icon"><a href="mailto:support@themvp.in">support@themvp.in</a></li>
+                            <li class="mt-3">
+                                <img src="call-light.svg" class="icon">
+                                <div>
+                                    <a href="tel:18003092944">1800 309 2944</a>
+                                    <small class="d-block mt-2">Toll Free Sales & Support</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-4">
+                <div class="text-md-end">
+                    <div class="poweredby"><span>Powered by </span><a href="http://madebytnm.com" target="_blank"> That's No Moon</a></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+
+<!-- Floating Buttons -->
+<a href="https://api.whatsapp.com/send?phone=918977917186&text=Hi! I have a query on TheMVP website" class="fixed-whatsapp" target="_blank">
+    <img src="whatsapp-light.svg">
+</a>
+<!-- End Floating Buttons -->
+
+<!-- Search Modal -->
+<div class="modal fade" id="GlobalSearchModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="GlobalSearchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen searchmodal-fullscreen">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        
+          <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="d-flex mb-5">
+                      <input class="form-control me-2" id="prod_search" value type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+                      <button class="btn btn-primary" type="button" id="submit_search">Search</button>
+                    </form>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                    
+                    <div class="my-4">
+                        <small class="text-uppercase text-muted" style="font-size: 11px">Best Selling</small>
+
+                        
+                        
+                        <ul class="search-suggestions-nav" style>
+                          <li>
+                            <a href="#">Gaming</a>
+                          </li>
+                          <li>
+                            <a href="#">Visual</a>
+                          </li>
+                          <li>
+                            <a href="#">Graphic</a>
+                          </li>
+                          
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                  </div>
+              </div>
+              
+              
+              
+              
+          </div>
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+    
+       <!-- Java Script -->
+
+    <script src="../js/jquery-1.12.4.min.js"></script>    
+    <!-- <script src="catalog/view/assets/js/vendor.min.js"></script> -->
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/TweenMax.min.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>      
+    <script src="../js/ScrollToPlugin.min.js"></script>
+    <script src="../js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="../js/slide-menu.js"></script>
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script> 
+    <script type="text/javascript" src="../js/jquery.fancybox.min.js"></script>
+    
+    <script src="../js/wow.min.js"></script>
+    
+    
+    
+    <!-- Performance Slider -->
+    <link href="../css/number-pb.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery.velocity.min.js"></script>
+    <script src="../js/number-pb.js"></script>
+    
+    <script type="text/javascript" src="../js/main.js"></script>
+    
+    
+    
+    
+    <script src="../js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="../js/form-validation.js"></script>
+    
+    <script src="../js/typed.min.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+   
+    <script>
+        feather.replace();
+        $('[data-bs-toggle="tooltip"]').tooltip();            
+
+    </script>
+        
+      <script id="rendered-js">
+
+            const wrap = document.querySelector(".options-sec");
+            const expa = document.querySelector(".exp-a");
+            const expb = document.querySelector(".exp-b");
+            const expc = document.querySelector(".exp-c");
+          const dur = 0.6;
+
+//     let tl1 = gsap.timeline({
+//       reversed: true,
+//     });
+//     let tl2 = gsap.timeline({
+//       reversed: true,
+//     });
+
+//     tl1
+//       .fromTo(".img-1", {width: "50%" }, { duration: dur, width: "60%" })
+//       .fromTo(".img-2", {width: "50%" }, { duration: dur, width: "40%" }, "<");
+
+//     tl2
+//       .to(".img-2", { duration: dur, width: "60%" })
+//       .to(".img-1", { duration: dur, width: "40%" }, "<");
+//
+//        gsap.set(".exp-a", { width: "33.3%" });
+//        gsap.set(".exp-b", { width: "33.3%" });
+//        gsap.set(".exp-c", { width: "33.3%" });
+
+        $(".exp-a").click(function(){
+          gsap.to(".exp-a", { className: "sec-col exp-a expand open"});
+          gsap.to(".exp-b", { className: "sec-col exp-b expand close" });
+          gsap.to(".exp-c", { className: "sec-col exp-c expand close" });
+
+        });
+          
+          $(".exp-b").click(function(){
+          gsap.to(".exp-a", { className: "sec-col exp-a expand close"});
+          gsap.to(".exp-b", { className: "sec-col exp-b expand open" });
+          gsap.to(".exp-c", { className: "sec-col exp-c expand close" });
+
+        });
+          
+          $(".exp-c").click(function(){
+          gsap.to(".exp-a", { className: "sec-col exp-a expand close"});
+          gsap.to(".exp-b", { className: "sec-col exp-b expand close" });
+          gsap.to(".exp-c", { className: "sec-col exp-c expand open" });
+
+        });
+          
+          
+          
+//          wrap.addEventListener("mouseleave", () => {
+//          gsap.to(".exp-a", { duration: 1, width: "33.3%" });
+//          gsap.to(".exp-b", { duration: 1, width: "33.3%" });
+//          gsap.to(".exp-c", { duration: 1, width: "33.3%" });
+//
+//        });
+          
+          const box = document.querySelector(".exp-a");
+          
+          box.addEventListener("mouseenter",function(){
+          const move = "";
+          this.classList.add(move);
+
+          this.addEventListener("animationend",function(){
+            this.classList.remove(move);
+          });
+
+          this.addEventListener("mouseleave",function(){
+            this.classList.remove(move);
+          });
+  
+});
+          
+</script>
+
+        <!-- 
+
+        Keyword: footer links turn into accordion for mobile
+        
+        https://stackoverflow.com/questions/63113617/how-to-create-accordion-menu-footer-for-mobile-only
+
+        -->
+    <script type="text/javascript">
+        $('#prod_search').bind("keypress", function(e) {
+            //alert("search");
+            if (e.keyCode == 13) {
+                var url = $('base').attr('href') + 'index.php?route=product/search';
+
+                var value = $('#prod_search').val();
+
+                if (value) {
+                    url += '&search=' + encodeURIComponent(value);
+                }
+
+                location = url;
+            }
+        });
+
+        $('#submit_search').on('click', function(e) {
+            var url = $('base').attr('href') + 'index.php?route=product/search';
+
+            var value = $('#prod_search').val();
+
+            if (value) {
+                url += '&search=' + encodeURIComponent(value);
+            }
+
+            location = url;
+        });
+
+        $('#submit_search2').on('click', function(e) {
+            var url = $('base').attr('href') + 'index.php?route=product/search';
+
+            var value = $('#prod_search2').val();
+
+            if (value) {
+                url += '&search=' + encodeURIComponent(value);
+            }
+
+            location = url;
+        });
+
+        $('#no_search_submit').on('click', function(e) {
+            var url = $('base').attr('href') + 'index.php?route=product/search';
+
+            var value = $('#no_search_id').val();
+
+            if (value) {
+                url += '&search=' + encodeURIComponent(value);
+            }
+
+            location = url;
+        });
+
+    </script>
+    
+    
+       
+<!-- Grid Masonry -->
+<script type="text/javascript" src="../js/masonry.pkgd.min.js"></script>
+<script>
+        $(function() {
+            var $grid = $('.grid').imagesLoaded( function() {
+              $grid.masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer'
+              }); 
+            });
+         });
+         
+          
+        
+       
+        
+
+    </script>
+    
+    
+<!-- Performance Slider -->
+<script>
+      $(function() {
+        
+        
+          
+//        function standardValue2(y=30) {
+//          return y;
+//        }
+//         
+
+        var controlBar = $('#performance-noise .number-pb').NumberProgressBar({
+          duration: 2000,
+          min: 0,
+          max: 46,
+          current: 40
+        });
+          
+        var controlBar = $('#performance-gpu .number-pb').NumberProgressBar({
+          duration: 2500,
+          min: 0,
+          max: 72,
+          current: 51
+        });
+          
+        var controlBar = $('#performance-cpu .number-pb').NumberProgressBar({
+          duration: 3000,
+          min: 0,
+          max: 75,
+          current: 63
+        });
+
+
+
+      });
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 80
+        }, 300, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+        
+</body>
+</html>
+

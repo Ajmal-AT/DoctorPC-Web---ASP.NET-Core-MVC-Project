@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+@model DoctorPC_Web.Models.product
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data" role="form">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input asp-for="pname" class="form-control" placeholder="product name " />
+                <span asp-validation-for="pname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+               
+                <input asp-for="price" class="form-control" placeholder="product price"/>
+                <span asp-validation-for="price" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                
+                <input asp-for="imgfile" type="file" name="file" class="form-control" placeholder="choose photo"/>
+                <span asp-validation-for="imgfile"  class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,60 @@
+﻿@{
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+@model IEnumerable<DoctorPC_Web.Models.user>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Manage Users</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numb)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cpassword)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.numb)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cpassword)
+            </td>
+            <td>
+                
+                <a asp-action="Details" asp-route-id="@item.uid">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.uid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

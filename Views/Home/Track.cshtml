@@ -1,0 +1,102 @@
+﻿@{
+    Layout = "~/Views/Shared/User.cshtml";
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<div class="row " style="margin-top:1%;">
+    <div id="content" class="col-sm-12">
+        <main>
+            <div id="error_id" class="alert alert-danger" style="display:none;">
+                <i class="fa fa-exclamation-circle"></i> Please check your Order ID
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+            </div>
+            <section class="order-tracking">
+                <div class="container-fluid content-overlay">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <h1>Track Your Order</h1>
+                            <p style="color: grey;">Click the link to track your order</p>
+                        </div>
+                        <div class="col-lg-10">
+
+                            
+                            <div class="form-group">
+                                <div class="row g-2">
+                                    <a href="https://www.shiprocket.in/shipment-tracking/" style="color: royalblue;"><u>Track My Order</u></a>
+                                    <div class="col-lg-auto"><button class="btn btn-primary btn-track" type="button" id="track_button">Submit</button></div>
+                                </div>
+
+                            </div>
+
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="GlobalSearchModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="GlobalSearchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen searchmodal-fullscreen">
+        <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <form class="d-flex mb-5">
+                                <input class="form-control me-2" id="prod_search" value="" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+                                <button class="btn btn-primary" type="button" id="submit_search">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+
+                            <div class="my-4">
+                                <small class="text-uppercase text-muted" style="font-size: 11px">Best Selling</small>
+
+
+
+                                <ul class="search-suggestions-nav" style="">
+                                    <li>
+                                        <a href="#">Gaming</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Visual</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Graphic</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

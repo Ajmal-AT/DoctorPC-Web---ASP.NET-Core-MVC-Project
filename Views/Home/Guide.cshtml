@@ -1,0 +1,274 @@
+﻿@{
+    Layout = "~/Views/Shared/User.cshtml";
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div id="notification"></div>
+<section class="section hero-banner firs-time-buyers hero-bg">
+    <div class="container content-overlay">
+        <div class="banner-block">
+
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h1 class="title">
+                        <span>For </span>
+                        <span>First time</span>
+                        <span class="title_graident graident_4">Buyers</span>
+                    </h1>
+                    <p class="mt-3">
+                        We understand that buying a PC can be intimidating, that's why we've made it easy with buttons and sliders -  Just pick your purpose and budget and voila! We'll take care of the rest, no jargon, no fuss. Plus, you get to avoid talking to real people, which is a bonus, right?
+                    </p>
+                </div>
+            </div>
+            <div class="banner-visuals">
+                <img src="~/assest/images/performance.webp">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="findPC" class="find-pc">
+    <div class="container-fluid layout-fixed">
+        <div class="find-pc-container">
+
+            <div class="find-pc-content">
+                <div class="section-head">
+                    <h1>Find your PC</h1>
+                    <div class="step-control-buttons">
+                        <div class="nav nav-pills pill-custom" id="cpc-tab" role="tablist">
+                            <button class="nav-link active" id="tab-choose" data-bs-toggle="pill" data-bs-target="#target-choose" type="button" role="tab" aria-controls="tab-choose" aria-selected="true">
+
+                                <div class="btn-border">
+                                    <div class="btn-border-top"></div>
+                                    <div class="btn-text">Choose Preferences</div>
+                                    <div class="btn-border-bottom"></div>
+                                </div>
+                            </button>
+                            <button class="nav-link" id="tab-result" data-bs-toggle="pill" data-bs-target="#target-result" type="button" role="tab" aria-controls="tab-result" aria-selected="false">
+                                <div class="btn-border" role="presentation">
+                                    <div class="btn-border-top"></div>
+                                    <div class="btn-text">View PCs</div>
+                                    <div class="btn-border-bottom"></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="target-choose" role="tabpanel" aria-labelledby="tab-choose">
+                        <form name="formBudget" id="formBudget">
+                            <p>Why settle for a one-size-fits-all PC when you can customize your own with just a few clicks of our magic buttons and slider</p>
+
+                            <div class=" mb-2" id="error_alert" style="display: none;">
+                                <small class="alert alert-warning d-inline p-2 rounded"><span class="flat-icon flaticon-info me-2"></span> Please complete all the steps</small>
+                            </div>
+
+                            <div class="row" style="margin:3%">
+                            <div class="preference d-flex justify-content-around">
+                                <div class="card" style="width: 33%;background-color: #dafffb;">
+                                    <img src="~/assest/images/gaming.jpg" class="card-img-top" alt="" style="width: 100%; height: 500px;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Performence beast</h5>
+                                        <p class="card-text">These are the computers that focused on performence.it's prefered for gaming, video editing, high coding works</p>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 33%;background-color: #dafffb;">
+                                    <img src="~/assest/images/homecpu.jpg" class="card-img-top" alt="..." style="width: 100%; height: 500px;">
+
+                                    <div class="card-body">
+                                        <center>
+                                            <h5 class="card-title">Home computers</h5>
+                                            <p class="card-text">Home computers are mainly specified for minimal tasks like word processing, spreadsheets, email, accounting.</p>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 33%;background-color: #dafffb;">
+                                    <img src="~/assest/images/modrate.jpg" class="card-img-top" alt="..." style="width: 100%; height: 500px;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">All rounder</h5>
+                                        <p class="card-text">Modrate is a mixture of these two types which can push You to simple tasks and a descent level gaming.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <input type="hidden" name="input_usecase" id="input_usecase">
+                            <input type="hidden" name="input_budget" id="input_budget">
+                            <input type="hidden" name="input_accessories" id="input_accessories">
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="target-result" role="tabpanel" aria-labelledby="tab-result">
+                        <div>
+                            <h2>Please choose the preferences for result!</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="fixed-element">
+                <img src="~/assest/images/console.webp">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cpc-key-features mb-0">
+
+    <div class="container layout-fixed">
+        <div class="section-head">
+            <h1>Why Choose Us?</h1>
+            <p>We don't just build PCs, we Frankenstein them together with the perfect mix of brains (components) and brawn (cooling and aesthetics).</p>
+        </div>
+        <div class="section-body">
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="row g-4 justify-content-between">
+                        <div class="col-md-5">
+                            <div class="cpc-feature">
+                                <div class="feature-icon">
+                                    <figure class="icon m-0"><img src="~/assest/images/icon-pc-power.png"></figure>
+                                    <div class="ms-3">
+                                        <h5 class="text-uppercase">What sets us apart?</h5>
+                                    </div>
+                                </div>
+
+                                <div class="feature-content">
+                                    <p>What sets us apart is our experience and expertise. We've been building PCs for over 10 years and our team is made up of gamers and professionals with specific interests in graphics and video. This gives us a unique understanding of what it takes to create a top-performing PC that meets the demands of our customers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="cpc-feature">
+                                <div class="feature-icon">
+                                    <figure class="icon m-0"><img src="~/assest/images/icon-pc-performance.png"></figure>
+                                    <div class="ms-3">
+                                        <h5 class="text-uppercase">Highest Quality Components</h5>
+                                    </div>
+                                </div>
+
+                                <div class="feature-content">
+                                    <p>At our company, we only use high-quality, branded components in our PCs to ensure reliability and longevity. We believe in providing our customers with the best possible experience, and that means not cutting corners with cheap or unbranded components. Additionally, we strive to avoid over-priced components, like unnecessarily large power supplies, that do not add any value to the final product. Trust us to build a PC that will perform well and last for years to come.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="cpc-feature">
+                                <div class="feature-icon">
+                                    <figure class="icon m-0"><img src="~/assest/images/icon-pc-cpu.png"></figure>
+                                    <div class="ms-3">
+                                        <h5 class="text-uppercase">A Work of Art</h5>
+                                    </div>
+                                </div>
+
+                                <div class="feature-content">
+                                    <p>We use top-notch components and pay close attention to detail in every aspect of our builds. Our team of experts, with a passion for gaming and professional graphics, use their years of experience to craft PCs that exceed expectations and cater to individual needs. Trust us to deliver a dependable and visually impressive computer, tailored to your specifications.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="cpc-feature">
+                                <div class="feature-icon">
+                                    <figure class="icon m-0"><img src="~/assest/images/icon-pc-maintenance.png"></figure>
+                                    <div class="ms-3">
+                                        <h5 class="text-uppercase">We’re Available! </h5>
+                                    </div>
+                                </div>
+
+                                <div class="feature-content">
+                                    <p>We prioritize customer service and make ourselves easily accessible through phone and email. With us, you can directly speak to a real person and receive personalized assistance with no pressure to make a purchase. Our goal is to ensure our customers make informed decisions and are completely satisfied with their purchase.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials cpc-customer-testimonials">
+    <div class="container layout-fixed">
+        <div class="section-head">
+            <h1>Meet our happy customers</h1>
+
+        </div>
+        <div class="section-body">
+            <div class="row">
+            <div class="swiper cpc-customer-testimonials-swiper">
+                <div class=" swiper-wrapper testimonials-content">
+                    
+                    <div class="swiper-slide  col-lg-6">
+                        <div class="client-review">
+                            <div class="product">
+                                <img src="~/assest/images/cabinet1.jpg">
+                            </div>
+                            <p class="review__brief">Doctor PC accommodated all my requirements, I’m very satisfied and they are now my first stop to buy any computer hardware</p>
+                            <div class="review__by">
+                                <div class="client__info">
+                                    <h5 class="name">Abdul Salam</h5>
+                                    <span class="role"> Hyderabad</span>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide  col-lg-6">
+                        <div class="client-review">
+                            <div class="product">
+                                <img src="~/assest/images/cabinet5.jpg">
+                            </div>
+                            <p class="review__brief">I will strongly recommend anyone who's looking to get their new PC to visit here because Doctor PC will be the best to opt for!</p>
+                            <div class="review__by">
+                                <div class="client__info">
+                                    <h5 class="name">Ashutosh Shukla</h5>
+                                    <span class="role">Mumbai</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="swiper-slide col-lg-6">
+                        <div class="client-review">
+                            <div class="product">
+                                <img src="~/assest/images/cabinet4.jpg">
+                            </div>
+                            <p class="review__brief">They understand your budget and needs and suggest you with the best possible build to meet your requirements. 10/10 would recommend.</p>
+                            <div class="review__by">
+                                <div class="client__info">
+                                    <h5 class="name">Ritwik Mamidi</h5>
+                                    <span class="role">Ahmedabad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-lg-6">
+                        <div class="client-review">
+                            <div class="product">
+                                <img src="~/assest/images/cabinet3.jpg">
+                            </div>
+                            <p class="review__brief">Their work is flawless. You can customise it the way you want it. They have great experience with almost all the products out there in the market.</p>
+                            <div class="review__by">
+                                <div class="client__info">
+                                    <h5 class="name">Harsha K</h5>
+                                    <span class="role">Bangalore</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
